@@ -33,7 +33,7 @@ public class Kata
       }
       else
       {
-        return integers[0];
+      return integers[0];
       }
     } 
   return -1;
