@@ -1,6 +1,6 @@
 /*
-Name: Shay
-Date: 05/02/19
+Name: Shay Pepper
+Date: 02/05/19
 Kata: https://www.codewars.com/kata/find-the-parity-outlier
 */
 
