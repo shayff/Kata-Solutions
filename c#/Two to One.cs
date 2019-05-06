@@ -5,7 +5,7 @@
  Kata: https://www.codewars.com/kata/two-to-one/csharp
  */
  
- using System;   
+using System;   
 using System.Linq;
 
 public class TwoToOne 
@@ -16,6 +16,6 @@ public class TwoToOne
         char []charArray = mergedString.ToCharArray();  
         Array.Sort(charArray); 
               
-    return string.Join("", charArray.Distinct());
+    return string.Concat(charArray.Distinct());
   }
 }
