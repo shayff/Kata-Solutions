@@ -1,4 +1,5 @@
- Name: Shay Pepper
+/*
+Name: Shay Pepper
  Date: 07/05/2019
  Title: Vasya - Clerk
  Kata: https://www.codewars.com/kata/vasya-clerk/train/csharp
