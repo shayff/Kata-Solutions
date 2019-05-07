@@ -10,7 +10,7 @@ public class Line
     {
         public static string Tickets(int[] peopleInLine)
         { 
-           int Bill25 = 0, Bill50=0,Bill100=0;
+           int Bill25 = 0, Bill50=0;
            for(int i=0;i<peopleInLine.Length;++i)
            {      
            switch (peopleInLine[i])
@@ -34,16 +34,14 @@ public class Line
                       {
                         --Bill25;
                         --Bill50;
-                        ++Bill100;
                       }
                       else if(Bill25>=3)
                       {
-                       Bill25-=3;
-                      ++Bill100;
+                        Bill25-=3;
                       }
                       else
                       {
-                      return "NO";
+                       return "NO";
                       }
                     break;             
             }               
