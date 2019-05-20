@@ -1,0 +1,29 @@
+ /*
+ Name: Shay Pepper
+ Date: 20/05/2019
+ Title: Offload your work!
+ Kata: https://www.codewars.com/kata/offload-your-work/
+ */
+
+using System; 
+
+class Kata
+{
+    public static string WorkNeeded(int projectMinutes, int[][] freelancers)
+    {
+        int time=0;
+        foreach (int[] project in freelancers)
+        {
+          time+=project[0]*60+project[1];
+        }
+        projectMinutes-=time;
+        if (projectMinutes>0)
+        {
+          return String.Format("I need to work {0} hour(s) and {1} minute(s)",projectMinutes/60,projectMinutes%60);
+        }
+        else
+        {
+          return "Easy Money!";
+        }
+    }
+}
