@@ -11,12 +11,10 @@ class Kata
 {
     public static string WorkNeeded(int projectMinutes, int[][] freelancers)
     {
-        int time=0;
         foreach (int[] project in freelancers)
         {
-          time+=project[0]*60+project[1];
+          projectMinutes-=project[0]*60+project[1];
         }
-        projectMinutes-=time;
         if (projectMinutes>0)
         {
           return String.Format("I need to work {0} hour(s) and {1} minute(s)",projectMinutes/60,projectMinutes%60);
